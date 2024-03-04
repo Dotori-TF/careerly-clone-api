@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  data-base:
+    image: postgres:16.1
+    container_name: dotori-postgres
+    environment:
+      POSTGRES_DB: dotori
+      POSTGRES_USER: dotori_admin
+      POSTGRES_PASSWORD: dotori0303@
+    ports:
+      - "5432:5432"
+#    volumes:
+#      - ~/local/directory/path:/var/lib/postgresql/data
