@@ -12,6 +12,7 @@ spring:
     password: dotori0303@
   jpa:
     show-sql: true
+    defer-datasource-initialization: true
     hibernate:
       ddl-auto: none
   sql:
